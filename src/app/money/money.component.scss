@@ -1,0 +1,97 @@
+.money{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF ;
+    img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    h1{
+        position: absolute;
+        top: 10%;
+        font-size: 150px;
+        color: #FFFFFF;
+        text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    }
+    .my-form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        background: rgba(34, 34, 34, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
+        height: 642px;
+        width: 1057px;
+        padding: 56px;
+        .amount{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            label{
+                font-size: 96px;
+            }
+            input{
+                width: 100%;
+                height: 96px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 10px solid #FFFFFF;
+                font-size: 96px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+            span{
+                font-size: 96px;
+            }
+        }
+        .message{
+            display: flex;
+            label{
+                font-size: 64px;
+            }
+            textarea{
+                width: 100%;
+                height: 79px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 8px solid #FFFFFF;
+                font-size: 64px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+        }
+        .beg{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 70px;
+            .begmethods{
+                height: 181px;
+                width: 175px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    height: 130px;
+                    width: 130px;
+                    &:hover{
+                        height: 140px;
+                        width: 140px;
+                    }
+                }
+                p{
+                    font-size: 24px;
+                    text-align: center;
+                    &:hover{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

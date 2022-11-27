@@ -1,0 +1,21 @@
+<section class="money">
+    <img src="/assets/money.png" alt="Money Background Image">
+    <h1>Beg Money</h1>
+    <div class="my-form">
+        <div class="amount">
+            <label for="amount">Amount</label>
+            <input type="text" ng-bind="amount" name="amount" id="amount" #amount>
+            <span>₹</span>
+        </div>
+        <div class="message">
+            <label for="message">Message</label>
+            <textarea name="message" ng-bind="message" row="2" id="message" #message></textarea>
+        </div>
+        <div class="beg">
+            <div class="begmethods" *ngFor="let begmethod of begmethods" ng-click="onBegClick(begmethod, amount.value, message.value, $event)">
+                <img src="/assets/{{ begmethod }}.png" alt="{{ begmethod }}">
+                <p>Beg on {{ begmethod }}</p>
+            </div>
+        </div>
+    </div>
+</section>

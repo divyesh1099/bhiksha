@@ -1,0 +1,10 @@
+<section class="header">
+    <div class="brand">
+        <a href="/">bhiksha</a>
+    </div>
+    <div class="navbar">
+        <ul class="nav-elements">
+            <li *ngFor="let navItem of navItems" class="nav-item"><a href="{{ navItem.value }}/">{{ navItem.title }}</a></li>
+        </ul>
+    </div>
+</section>

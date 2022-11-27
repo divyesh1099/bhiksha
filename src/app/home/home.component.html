@@ -1,0 +1,22 @@
+<section class="home">
+    <div id="poster">
+        <img src="/assets/poster.png" alt="Poster" class="poster">
+        <div class="content">
+            <h1>Beg Online</h1>
+            <p>Begging digitalised</p>
+        </div>
+    </div>
+
+    <div class="routes" *ngFor="let route of data">
+        <img src="/assets/{{ route.img_and_url }}.png" alt="{{ route.alt }}" class="{{ route.img_and_url }}">
+        <div class="details" style="top: {{ route.top }};">
+            <p>{{ route.message }}</p>
+            <a href="{{ route.img_and_url }}">Beg {{ route.alt }} Now</a>
+        </div>
+    </div>
+
+    <div class="start">
+        <img src="/assets/start.png" alt="Start">
+        <p>Start Begging Now</p>
+    </div>
+</section>
